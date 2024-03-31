@@ -1,37 +1,56 @@
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
-            </div>
+    <>
+      <nav className="flex h-[78px] items-center px-[5.4%] justify-between bg-transparent absolute top-0 left-0 right-0 z-10">
+        <Link href="/">
+          <Image src="/images/logo.png" alt="logo" width={178} height={63} priority/>
+        </Link>
+        <div className="flex items-center w-[55%] justify-between">
+          <Link href="/" className="font-semibold text-[13px] text-white">
+            Beranda
           </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
+          <Link href="/" className="font-semibold text-[13px] text-white">
+            Tentang Kami
+          </Link>
+          <Link href="/" className="font-semibold text-[13px] text-white">
+            Edukasi
+          </Link>
+          <Link href="/" className="font-semibold text-[13px] text-white">
+            Donasi Korban
+          </Link>
+          <Link href="/" className="font-semibold text-[13px] text-white">
+            Penyelamatan Diri
+          </Link>
+          <Link href="/" className="font-semibold text-[13px] text-white">
+            Bahasa Indonesia
           </Link>
         </div>
+        <div className="flex items-center">
+          <Link href="/" className="font-semibold text-[13px] text-white">Login</Link>
+          <Link href="/">
+            <button className="bg-[#FB6D48] hover:bg-[#d45839] text-white px-5 py-2 font-semibold text-[13px] ml-3 rounded-md">
+              Register
+            </button>
+          </Link>
+        </div>
+      </nav>
+      <div className="relative">
+        <section className="w-full h-[100vh] relative">
+          <img src="/images/sinabung.jpg" alt="sinabung" className="h-[100vh] w-full"/>
+          <div className="absolute inset-0 bg-[#14141472] flex items-center justify-center">
+            <div className="w-[45%] text-center">
+              <h1 className="font-bold text-[40px] text-white">Ketahui Risiko, Lindungi Diri</h1>
+              <p className="text-[20px] text-white">Selamat Datang di Panduan Penyelamatan Diri dari Gunung Berapi, Temukan Cara Menghadapi Bahaya dengan Sigap.</p>
+              <button className="bg-[#FB6D48] hover:bg-[#d45839] text-white px-5 py-2 font-semibold text-[19px] rounded-md mt-7">
+              Panduan Evakuasi/Penyelamatan
+            </button>
+            </div>
+          </div>
+        </section>
       </div>
-    </main>
-  );
+    </>
+  )
 }
