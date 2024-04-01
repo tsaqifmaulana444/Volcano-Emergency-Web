@@ -7,6 +7,7 @@ import Evacuation from "../components/frontend/evacuation/Evacuation"
 import Dont from "../components/frontend/evacuation/Dont"
 import Status from "../components/frontend/evacuation/Status"
 import Contact from "../components/frontend/evacuation/Contact"
+import Sidebar from "../components/frontend/evacuation/Sidebar"
 
 export default function EducationPage() {
   return (
@@ -47,23 +48,7 @@ export default function EducationPage() {
         </div>
       </nav>
       <div className="flex px-[5.4%] pt-5">
-        <aside className="w-[20%] h-[80vh] sticky top-[14vh] left-0 pt-2">
-          <div className="mb-3 flex">
-            <Link href="/education#" className="text-[12px] font-semibold">
-              Apa Yang Harus Dilakukan
-            </Link>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-[12px] ml-2"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
-          </div>
-          <div className="mb-3">
-            <Link href="/education#" className="text-[12px] font-semibold">Apa Yang Jangan Dilakukan</Link>
-          </div>
-          <div className="mb-3">
-            <Link href="/education#" className="text-[12px] font-semibold">Status Bencana</Link>
-          </div>
-          <div className="mb-3">
-            <Link href="/education#" className="text-[12px] font-semibold">Kontak Darurat</Link>
-          </div>
-        </aside>
+        <Sidebar/>
         <div className="w-[100%]">
           <Evacuation />
           <Dont />

@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Status() {
     return (
         <>
-            <section className="flex mt-12">
+            <section className="flex mt-12" id="status">
                 <div className="w-[70%]">
                     <h1 className="font-bold text-[32px]">
                         Status Bencana Gunung Berapi

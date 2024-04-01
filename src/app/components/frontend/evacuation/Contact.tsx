@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
         <>
-            <section className="my-12">
+            <section className="my-12" id="contact">
                 <h1 className="font-bold text-[32px]">
                     Kontak Darurat Internasional
                 </h1>
