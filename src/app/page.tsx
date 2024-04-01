@@ -3,11 +3,11 @@
 import Image from "next/image"
 import Link from "next/link"
 import Footer from "./components/frontend/Footer"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation } from 'swiper/modules'
 import 'swiper/css'
 import { type CSSProperties } from 'react'
+import LandingNavbar from "./components/frontend/LandingNavbar"
 
 interface CustomCSSProperties {
   '--swiper-navigation-color'?: string
@@ -18,41 +18,7 @@ type CustomStyle = CSSProperties & CustomCSSProperties
 export default function HomePage() {
   return (
     <>
-      <nav className="flex h-[78px] items-center px-[5.4%] justify-between bg-transparent absolute top-0 left-0 right-0 z-10">
-        <Link href="/">
-          <Image src="/images/logo.png" alt="logo" width={178} height={63} priority />
-        </Link>
-        <div className="flex items-center w-[55%] justify-between">
-          <Link href="/" className="font-semibold text-[13px] text-white">
-            Beranda
-          </Link>
-          <Link href="/" className="font-semibold text-[13px] text-white">
-            Tentang Kami
-          </Link>
-          <Link href="/education" className="font-semibold text-[13px] text-white">
-            Edukasi
-          </Link>
-          <Link href="/" className="font-semibold text-[13px] text-white">
-            Artikel
-          </Link>
-          <Link href="/" className="font-semibold text-[13px] text-white">
-            Penyelamatan Diri
-          </Link>
-          <select name="" id="" className="bg-transparent font-semibold text-[13px] text-white -mt-1">
-            <option value="" className="font-semibold text-[13px] text-[#141414]">Bahasa Indonesia</option>
-            <option value="" className="font-semibold text-[13px] text-[#141414]">English(UK)</option>
-            <option value="" className="font-semibold text-[13px] text-[#141414]">简体中文</option>
-          </select>
-        </div>
-        <div className="flex items-center">
-          <Link href="/" className="font-semibold text-[13px] text-white">Login</Link>
-          <Link href="/">
-            <button className="bg-[#FB6D48] hover:bg-[#d45839] text-white px-5 py-2 font-semibold text-[13px] ml-3 rounded-md">
-              Register
-            </button>
-          </Link>
-        </div>
-      </nav>
+      <LandingNavbar />
       <section className="w-full h-[100vh] relative">
         <Image src="/images/sinabung.jpg" width={1000} height={1000} alt="sinabung" className="h-[100vh] w-full" />
         <div className="absolute inset-0 bg-[#14141472] flex items-center justify-center">
@@ -65,7 +31,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F8F6F7]">
+      <section className="bg-[#F8F6F7]" id="about-us">
         <div className="w-[48%] text-center mx-auto pt-[55px]">
           <p className="text-[17px] text-[#FB6D48] font-semibold">Tentang Kami</p>
           <h1 className="font-bold text-[35px] text-[#141414]">Kami Hadir Untuk Keselamatan Anda.</h1>
