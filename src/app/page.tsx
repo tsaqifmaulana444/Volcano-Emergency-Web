@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation } from 'swiper/modules'
 import 'swiper/css'
 import { type CSSProperties } from 'react'
-import LandingNavbar from "./components/frontend/LandingNavbar"
+import { useState, useEffect } from 'react'
 
 interface CustomCSSProperties {
   '--swiper-navigation-color'?: string
@@ -16,9 +16,68 @@ interface CustomCSSProperties {
 type CustomStyle = CSSProperties & CustomCSSProperties
 
 export default function HomePage() {
+  const [section1Scrolled, setSection1Scrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const landingNavbar = document.querySelector('.landing-navbar')
+      if (landingNavbar) {
+        const navbarBottom = landingNavbar.getBoundingClientRect().bottom
+        const section1 = document.getElementById('about-us')
+        if (section1) {
+          const section1Top = section1.getBoundingClientRect().top
+          if (section1Top <= navbarBottom) {
+            setSection1Scrolled(true)
+          } else {
+            setSection1Scrolled(false)
+          }
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <>
-      <LandingNavbar />
+      <nav className={`landing-navbar transform origin-center transition-all duration-400 ease-in-out flex h-[78px] items-center px-[5.4%] justify-between sticky top-0 left-0 right-0 z-10 ${section1Scrolled ? "bg-white" : "bg-transparent"}`}>
+        <Link href="/">
+          <Image src="/images/logo.png" alt="logo" width={178} height={63} priority />
+        </Link>
+        <div className="flex items-center w-[55%] justify-between">
+          <Link href="/" className={`font-semibold text-[13px] ${section1Scrolled ? 'text-[#141414]' : 'text-white'}`}>
+            Beranda
+          </Link>
+          <Link href="/#about-us" className={`font-semibold text-[13px] ${section1Scrolled ? 'text-[#141414]' : 'text-white'}`}>
+            Tentang Kami
+          </Link>
+          <Link href="/education" className={`font-semibold text-[13px] ${section1Scrolled ? 'text-[#141414]' : 'text-white'}`}>
+            Edukasi
+          </Link>
+          <Link href="https://magma.vsi.esdm.go.id/" className={`font-semibold text-[13px] ${section1Scrolled ? 'text-[#141414]' : 'text-white'}`}>
+            Peta Aktif
+          </Link>
+          <Link href="/evacuation" className={`font-semibold text-[13px] ${section1Scrolled ? 'text-[#141414]' : 'text-white'}`}>
+            Penyelamatan Diri
+          </Link>
+          <select name="" id="" className={`bg-transparent font-semibold text-[13px] -mt-1 ${section1Scrolled ? 'text-[#141414]' : 'text-white'}`}>
+            <option value="" className="font-semibold text-[13px] text-[#141414]">Bahasa Indonesia</option>
+            <option value="" className="font-semibold text-[13px] text-[#141414]">English(UK)</option>
+            <option value="" className="font-semibold text-[13px] text-[#141414]">简体中文</option>
+          </select>
+        </div>
+        <div className="flex items-center">
+          <Link href="/" className={`font-semibold text-[13px] ${section1Scrolled ? 'text-[#141414]' : 'text-white'}`}>Login</Link>
+          <Link href="/">
+            <button className="bg-[#FB6D48] hover:bg-[#d45839] text-white px-5 py-2 font-semibold text-[13px] ml-3 rounded-md">
+              Register
+            </button>
+          </Link>
+        </div>
+      </nav>
       <section className="w-full h-[100vh] relative -mt-[78px]">
         <Image src="/images/sinabung.jpg" width={1000} height={1000} alt="sinabung" className="h-[100vh] w-full" />
         <div className="absolute inset-0 bg-[#14141472] flex items-center justify-center">
