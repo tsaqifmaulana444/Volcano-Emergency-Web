@@ -80,7 +80,7 @@ export default function Footer() {
                 </div>
             </div>
             <p className="font-regular text-[12px] text-white pb-7 mt-6 text-right">
-                Copyright © VEC Indonesia Tbk. All Right Reserved | Developed By <Link href="https://github.com/tsaqifmaulana444/" target="_blank" className="underline">Maulana</Link>
+                Copyright © VEC Indonesia. All Right Reserved | Developed By <Link href="https://github.com/tsaqifmaulana444/" target="_blank" className="underline">Maulana</Link>
                 </p>
         </footer>
     )
