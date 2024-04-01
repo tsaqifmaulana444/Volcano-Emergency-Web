@@ -22,19 +22,19 @@ export default function Sidebar() {
                 </button>
                 <div className={`transform origin-center transition-all duration-300 ease-in-out ${accordionOneOpen ? 'opacity-100' : 'opacity-0'}`}>
                     <div className={`mb-3 pl-4 overflow-hidden ${accordionOneOpen ? 'block': 'hidden'}`}>
-                        <Link href="/evacuation#" className="text-[12px] font-semibold">Situasi Lingkungan</Link>
+                        <Link href="/evacuation#do1" className="text-[12px] font-semibold">Situasi Lingkungan</Link>
                     </div>
                     <div className={`mb-3 pl-4 overflow-hidden ${accordionOneOpen ? 'block': 'hidden'}`}>
-                        <Link href="/evacuation#" className="text-[12px] font-semibold">Standar Evakuasi</Link>
+                        <Link href="/evacuation#do2" className="text-[12px] font-semibold">Standar Evakuasi</Link>
                     </div>
                     <div className={`mb-3 pl-4 overflow-hidden ${accordionOneOpen ? 'block': 'hidden'}`}>
-                        <Link href="/evacuation#" className="text-[12px] font-semibold">Pertolongan Pertama</Link>
+                        <Link href="/evacuation#do3" className="text-[12px] font-semibold">Pertolongan Pertama</Link>
                     </div>
                     <div className={`mb-3 pl-4 overflow-hidden ${accordionOneOpen ? 'block': 'hidden'}`}>
-                        <Link href="/evacuation#" className="text-[12px] font-semibold">Rute Evakuasi</Link>
+                        <Link href="/evacuation#do4" className="text-[12px] font-semibold">Rute Evakuasi</Link>
                     </div>
                     <div className={`mb-3 pl-4 overflow-hidden ${accordionOneOpen ? 'block': 'hidden'}`}>
-                        <Link href="/evacuation#" className="text-[12px] font-semibold">Kapan Harus Kembali</Link>
+                        <Link href="/evacuation#do5" className="text-[12px] font-semibold">Kapan Harus Kembali</Link>
                     </div>
                 </div>
                 <button className="mb-3 flex" onClick={() => setAccordionTwoOpen(!accordionTwoOpen)}>
