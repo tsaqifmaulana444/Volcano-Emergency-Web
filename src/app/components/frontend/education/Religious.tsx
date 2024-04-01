@@ -23,7 +23,7 @@ export default function Religious() {
             <section>
                 <p className="text-justify mt-3" id=""><span className="font-bold">Pembelajaran dan Peringatan</span><br />Bencana alam seringkali dianggap sebagai pembelajaran bagi umat manusia untuk lebih memperhatikan lingkungan, memperbaiki perilaku, dan mengambil tindakan untuk melindungi planet ini. Letusan gunung berapi dapat dijadikan peringatan bagi umat manusia untuk lebih hormat dan berhati-hati terhadap kekuatan alam.</p>
                 <p className="text-justify mt-3" id=""><span className="font-bold">Pengingat akan Akhirat</span><br />Dalam beberapa keyakinan agama, bencana alam dipandang sebagai pengingat akan akhirat dan hari kiamat. Letusan gunung berapi bisa dianggap sebagai tanda-tanda akhir zaman yang disebutkan dalam ajaran agama.</p>
-                <p className="text-justify mt-3" id="">Penting untuk dicatat bahwa pandangan tentang bencana alam dan hikmah di baliknya dapat bervariasi secara signifikan antara berbagai tradisi agama dan keyakinan individual. Namun, dalam banyak kasus, pengalaman bencana alam dapat menginspirasi pertimbangan spiritual, refleksi, dan tindakan yang lebih baik dalam kehidupan manusia.</p>
+                <p className="text-justify mt-3" id="benefit">Penting untuk dicatat bahwa pandangan tentang bencana alam dan hikmah di baliknya dapat bervariasi secara signifikan antara berbagai tradisi agama dan keyakinan individual. Namun, dalam banyak kasus, pengalaman bencana alam dapat menginspirasi pertimbangan spiritual, refleksi, dan tindakan yang lebih baik dalam kehidupan manusia.</p>
             </section>
         </>
     )
