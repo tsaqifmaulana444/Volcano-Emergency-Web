@@ -19,7 +19,7 @@ export default function HomePage() {
   return (
     <>
       <LandingNavbar />
-      <section className="w-full h-[100vh] relative">
+      <section className="w-full h-[100vh] relative -mt-[78px]">
         <Image src="/images/sinabung.jpg" width={1000} height={1000} alt="sinabung" className="h-[100vh] w-full" />
         <div className="absolute inset-0 bg-[#14141472] flex items-center justify-center">
           <div className="w-[45%] text-center">

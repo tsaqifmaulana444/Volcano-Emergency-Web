@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function LandingNavbar() {
     return (
-        <nav className="flex h-[78px] items-center px-[5.4%] justify-between bg-transparent absolute top-0 left-0 right-0 z-10">
+        <nav className="flex h-[78px] items-center px-[5.4%] justify-between bg-transparent sticky top-0 left-0 right-0 z-10">
             <Link href="/">
                 <Image src="/images/logo.png" alt="logo" width={178} height={63} priority />
             </Link>
