@@ -29,7 +29,7 @@ export default function HomePage() {
           <Link href="/" className="font-semibold text-[13px] text-white">
             Tentang Kami
           </Link>
-          <Link href="/" className="font-semibold text-[13px] text-white">
+          <Link href="/education" className="font-semibold text-[13px] text-white">
             Edukasi
           </Link>
           <Link href="/" className="font-semibold text-[13px] text-white">
