@@ -8,7 +8,7 @@ export default function Sidebar() {
     const [accordionTwoOpen, setAccordionTwoOpen] = useState(false)
     return (
         <>
-            <aside className="w-[20%] h-[80vh] sticky top-[14vh] left-0 pt-2">
+            <aside className="w-[20%] h-[80vh] sticky top-[14vh] left-0 pt-2 sm:block hidden">
                 <button className="mb-3 flex" onClick={() => setAccordionOneOpen(!accordionOneOpen)}>
                     <p className="text-[12px] font-semibold">
                         Apa Yang Harus Dilakukan
