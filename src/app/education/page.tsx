@@ -3,9 +3,13 @@
 import Image from "next/image"
 import Link from "next/link"
 import Footer from "../components/frontend/Footer"
+import VolcanoProcess from "../components/frontend/education/VolcanoProcess"
+import Religious from "../components/frontend/education/Religious"
+import Benefit from "../components/frontend/education/Benefit"
+import Damage from "../components/frontend/education/Damage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-export default function HomePage() {
+export default function EducationPage() {
   return (
     <>
       <nav className="flex h-[78px] items-center px-[5.4%] justify-between bg-white z-10 sticky top-0">
@@ -62,66 +66,10 @@ export default function HomePage() {
           </div>
         </aside>
         <div className="w-[100%]">
-          <section className="flex">
-            <div className="w-[70%]">
-              <h1 className="font-bold text-[32px]">
-                Proses Gunung Meletus
-              </h1>
-              <p className="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in quasi quod qui assumenda, quae nisi consequatur impedit officia, quibusdam beatae soluta molestias itaque error atque odio enim quam aliquid?</p>
-              <p className="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in quasi quod qui assumenda, quae nisi consequatur impedit officia, quibusdam beatae soluta molestias itaque error atque odio enim quam aliquid?</p>
-            </div>
-            <div className="w-[30%]">
-
-            </div>
-          </section>
-          <section className="flex">
-            <div className="w-[70%]">
-              <h1 className="font-bold text-[32px]">
-                Proses Gunung Meletus
-              </h1>
-              <p className="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in quasi quod qui assumenda, quae nisi consequatur impedit officia, quibusdam beatae soluta molestias itaque error atque odio enim quam aliquid?</p>
-              <p className="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in quasi quod qui assumenda, quae nisi consequatur impedit officia, quibusdam beatae soluta molestias itaque error atque odio enim quam aliquid?</p>
-            </div>
-            <div className="w-[30%]">
-
-            </div>
-          </section>
-          <section className="flex">
-            <div className="w-[70%]">
-              <h1 className="font-bold text-[32px]">
-                Proses Gunung Meletus
-              </h1>
-              <p className="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in quasi quod qui assumenda, quae nisi consequatur impedit officia, quibusdam beatae soluta molestias itaque error atque odio enim quam aliquid?</p>
-              <p className="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in quasi quod qui assumenda, quae nisi consequatur impedit officia, quibusdam beatae soluta molestias itaque error atque odio enim quam aliquid?</p>
-            </div>
-            <div className="w-[30%]">
-
-            </div>
-          </section>
-          <section className="flex">
-            <div className="w-[70%]">
-              <h1 className="font-bold text-[32px]">
-                Proses Gunung Meletus
-              </h1>
-              <p className="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in quasi quod qui assumenda, quae nisi consequatur impedit officia, quibusdam beatae soluta molestias itaque error atque odio enim quam aliquid?</p>
-              <p className="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in quasi quod qui assumenda, quae nisi consequatur impedit officia, quibusdam beatae soluta molestias itaque error atque odio enim quam aliquid?</p>
-            </div>
-            <div className="w-[30%]">
-
-            </div>
-          </section>
-          <section className="flex">
-            <div className="w-[70%]">
-              <h1 className="font-bold text-[32px]">
-                Proses Gunung Meletus
-              </h1>
-              <p className="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in quasi quod qui assumenda, quae nisi consequatur impedit officia, quibusdam beatae soluta molestias itaque error atque odio enim quam aliquid?</p>
-              <p className="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in quasi quod qui assumenda, quae nisi consequatur impedit officia, quibusdam beatae soluta molestias itaque error atque odio enim quam aliquid?</p>
-            </div>
-            <div className="w-[30%]">
-
-            </div>
-          </section>
+          <VolcanoProcess />
+          <Religious />
+          <Benefit />
+          <Damage />
         </div>
       </div>
       <Footer />
