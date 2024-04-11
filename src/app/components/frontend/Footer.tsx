@@ -13,7 +13,7 @@ export default function Footer() {
                     <h2 className="font-semibold sm:text-[25px] text-[18px] text-white">Nomor Telpon Darurat: 112</h2>
                     <h2 className="font-semibold sm:text-[18px] text-[12px] text-white">Gmail: contact@vecindonesia.com</h2>
                 </div>
-                <div className="flex justify-between sm:w-[15%] w-[55%] mt-4 sm:mt-0">
+                <div className="flex justify-between md:w-[15%] sm:w-[25%] w-[50%] mt-4 sm:mt-0">
                     <FontAwesomeIcon icon={faYoutube} style={{color: "#ffffff"}}  size="xl"/>
                     <FontAwesomeIcon icon={faInstagram} style={{color: "#ffffff"}}  size="xl"/>
                     <FontAwesomeIcon icon={faXTwitter} style={{color: "#ffffff"}}  size="xl"/>

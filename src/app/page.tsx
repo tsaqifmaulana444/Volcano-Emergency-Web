@@ -49,7 +49,7 @@ export default function HomePage() {
             <Image src="/images/logo.png" alt="logo" width={178} height={63} priority />
           </Link>
         </div>
-        <div className="hidden sm:flex items-center w-[55%] justify-between">
+        <div className="md:flex hidden sm:hidden items-center w-[55%] justify-between">
           <Link href="/" className={`font-semibold text-[13px] ${section1Scrolled ? 'text-[#141414]' : 'text-white'}`}>
             Beranda
           </Link>
@@ -71,13 +71,17 @@ export default function HomePage() {
             <option value="" className="font-semibold text-[13px] text-[#141414]">简体中文</option>
           </select>
         </div>
-        <div className="flex items-center">
+        <div className="md:flex hidden sm:hidden items-center">
           <Link href="/" className={`font-semibold text-[13px] ${section1Scrolled ? 'text-[#141414]' : 'text-white'}`}>Login</Link>
           <Link href="/">
             <button className="bg-[#FB6D48] hover:bg-[#d45839] text-white px-5 py-2 font-semibold text-[13px] ml-3 rounded-md">
               Register
             </button>
           </Link>
+        </div>
+        <div className="md:hidden sm:flex flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill={section1Scrolled ? "#141414" : "#ffffff"} className="w-[25px]"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" /></svg>
+          &nbsp;
         </div>
       </nav>
       <section className="w-full h-[100vh] relative -mt-[78px]">
@@ -132,8 +136,8 @@ export default function HomePage() {
           <p className="text-[17px] text-[#FB6D48] font-semibold">Sambutan</p>
           <h1 className="font-bold sm:text-[35px] text-[30px] text-[#141414]">Sambutan Dari Bapak Maulana Salim S.T, M.BA, Selaku Direktur Utama pada PT. VEC Indonesia</h1>
         </div>
-        <div className="sm:flex block px-[5.4%] justify-between sm:mt-12 mt-6 pb-10">
-          <div className="sm:w-[50%] w-full">
+        <div className="md:flex sm:block block px-[5.4%] justify-between sm:mt-12 mt-6 pb-10">
+          <div className="md:w-[50%] sm:w-full w-full">
             <p className="text-justify text-[16px]">
               Selamat datang di PT. VEC Indonesia, tempat di mana keselamatan dan pemahaman tentang bencana gunung berapi menjadi prioritas utama kami.
               <br /><br />
@@ -146,7 +150,7 @@ export default function HomePage() {
               Mari bersama-sama membangun komunitas yang tangguh dan siap menghadapi tantangan alam. Terima kasih telah bergabung dengan kami di PT. VEC Indonesia. Bersama, kita bisa menjadikan dunia ini tempat yang lebih aman dan berdaya. Selamat belajar!
             </p>
           </div>
-          <div className="flex sm:w-[38%] w-full items-center sm:mt-0 mt-6">
+          <div className="flex md:w-[38%] sm:w-full w-full items-center md:mt-0 sm:mt-3 mt-6">
             <div className="w-full">
               <Image src="/images/directur.jpeg" alt="Maulana Salim" width={600} height={600} className="w-full rounded-2xl" />
               <p className="text-right text-[13px]">Gambar: Maulana Salim</p>
